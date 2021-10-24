@@ -1,0 +1,39 @@
+Location：(P3D V4, V5 is different，modify each version）
+P3D\SimObjects\Airplanes\(Aircraft)\panel\panel.cfg
+
+Find:
+//CDU (left)
+[Window01]                                  // or Windows XX
+BACKGROUND_COLOR=0,0,0
+size_mm=385,600
+window_size=0.625, 0.5
+position=8
+visible=0
+ident=401
+zorder=99
+
+gauge00=PMDG_737NGXu!CDU, 0,0,385,600,L #0
+
+Modify the last line:
+type  //   let this line not avctive，the copy the line which modified.
+
+example: PMDG 737 NGXu  modify like below:
+**************************************************************
+//gauge00=PMDG_737NGXu!CDU, 0,0,385,600,L #0
+gauge00=PMDG_737NGXu!CDU,-90,-102,570,1700,L #0
+
+*************************************************************'
+
+Copy to your aircraft:
+PMDG 737NGX :
+gauge00=PMDG_737NGX!CDU,-90,-125,570,1700,L #0
+
+PMDG737NGXu 
+gauge00=PMDG_737NGXu!CDU,-90,-102,570,1700,L #0
+
+PMDG 777 ：
+gauge00=PMDG_777X!CDU, -93,-152,570,1700,L #0
+
+PMDG747-400:
+gauge00=PMDG_747QOTSII!CDU, -87,-100,550,1640,L #0
+

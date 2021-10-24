@@ -1,0 +1,37 @@
+文件位置：(P3D V4, V5是分开的，要分别修改）
+P3D\SimObjects\Airplanes\对应的机型\panel\panel.cfg
+
+找到
+//CDU (left)
+[Window01]                                     不一定是 Windows01
+BACKGROUND_COLOR=0,0,0
+size_mm=385,600
+window_size=0.625, 0.5
+position=8
+visible=0
+ident=401
+zorder=99
+
+gauge00=PMDG_737NGXu!CDU, 0,0,385,600,L #0
+
+注意最后一行：只修改最后一行。
+在这行加个英文的 //   让它失效，然后复制对应代码过来。
+以PMDG 737 NGXu为例 最后是这样的。
+**************************************************************
+//gauge00=PMDG_737NGXu!CDU, 0,0,385,600,L #0
+gauge00=PMDG_737NGXu!CDU,-90,-102,570,1700,L #0
+
+*************************************************************'
+以下是对应各机型参数：
+PMDG 737NGX :
+gauge00=PMDG_737NGX!CDU,-90,-125,570,1700,L #0
+
+PMDG737NGXu 
+gauge00=PMDG_737NGXu!CDU,-90,-102,570,1700,L #0
+
+PMDG 777 ：
+gauge00=PMDG_777X!CDU, -93,-152,570,1700,L #0
+
+PMDG747-400:
+gauge00=PMDG_747QOTSII!CDU, -87,-100,550,1640,L #0
+
